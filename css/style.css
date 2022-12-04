@@ -7,6 +7,7 @@ html, body {
 }
 body {
   line-height: 26px;
+  position: relative;
 }
 a {
   text-decoration: none;
@@ -169,7 +170,7 @@ fill: rgba(255, 0, 56, 1);
   display: flex;
   align-items: center;
   justify-content: center;
-  height: calc(100vh - 118px);
+  height: calc(100vh - 116px);
   margin: 0;
 }
 .social_box {
@@ -204,7 +205,84 @@ fill: rgba(255, 0, 56, 1);
 }
 
 
-/* sec page */
+/* --------------------- 12 LESSON ---------------------- */
+
+.hidden_ul {
+  position: fixed;
+  bottom: 0;
+  right: 100px;
+  padding-bottom: 40px;
+  background-color: rgb(174, 152, 255);
+  transform: translateY(calc(100% - 46px));
+  transition: all .5s linear;
+}
+
+.hidden_ul:hover {
+transform: translate(0);
+}
+
+.hidden_ul h3 {
+  background: pink;
+  padding: 10px 50px;
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 50px;
+  cursor: default;
+}
+
+.social_ul {
+  display: flex;
+  /* transition: all 1s cubic-bezier(0,.05,1,.52); */
+  width: 120px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 10px;
+  transform: rotate(-45deg);
+}
+
+.social_ul a {
+  display: block;
+  padding: 5px;
+}
+
+.social_ul a:hover svg {
+fill: rgba(255, 0, 56, 1);
+transform: rotate(calc(3turn + 45deg));
+}
+
+.social_ul li {
+  line-height: 0;
+  border: 2px solid rgb(0, 0, 0);
+  overflow: hidden;
+}
+
+.social_ul li:hover {
+  background: pink;
+}
+
+.social_icon {
+	width: 40px;
+	height: 40px;
+	fill: rgb(255, 255, 255);
+  transition-duration: 1s;
+  transform: rotate(45deg);
+}
+
+
+/* .hidden_ul li  a:hover,
+/* .hidden_ul li  a:hover .social_icon, */
+/* .social_icon:hover {
+  color: rgba(255, 0, 56, 1);
+  fill: rgba(255, 0, 56, 1);
+} */ 
+
+
+/* ----------------------------------------------------------------------> */
+
+
+
+/* sec page
 
 .container_secpage {
   width: 1200px;
